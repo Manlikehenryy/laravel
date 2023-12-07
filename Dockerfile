@@ -44,7 +44,7 @@ RUN groupmod --gid 1000  www-data
 
 # Run the entrypoint file.
 # CMD [ "docker/entrypoint.sh" ]
-# RUN chmod +x docker/entrypoint.sh
+RUN chmod +x docker/entrypoint.sh
 
 EXPOSE 80
 ENTRYPOINT ["docker/entrypoint.sh"]
